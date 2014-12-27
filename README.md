@@ -3,7 +3,7 @@ This repo is a mashup of parts of the sample Hoodie application, and a simplifie
 
 ## Installation
 
-First, install Hoodie: refer to the [install guides for OS X, Linux and Windows](http://hood.ie/#installation).
+First, install Hoodie: refer to the [Hoodie setup guide](http://hood.ie/intro/#get-started).
 
 Second, set up the application:
 * clone this repository

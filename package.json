@@ -57,5 +57,9 @@
       "name": "mike",
       "email": "mikehedman@gmail.com"
     }
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mikehedman/ampersand-hoodie-example.git"
+  }
 }
