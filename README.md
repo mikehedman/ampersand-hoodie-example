@@ -26,5 +26,8 @@ This app is reliant on Grunt.  So if you make any changes to anything under the 
 * "Compiles" the HTML templates into one JavaScript file (/amp/client/clientHtml.js)
 * uses Browserify to build a bundle of all the client side JavaScript, and puts it into /www/assets/js/allJs.js
 
-
-  
+## Components
+This application makes use of a couple of Ampersand modules to interact with Hoodie:
+* [ampersand-hoodie-mixin](https://github.com/mikehedman/ampersand-hoodie-mixin) Defines a new property, HOODIE_TYPE, for models and collections.  Overrides the default Ampersand REST sync functionality to instead store to Hoodie.
+* [ampersand-hoodie-model](https://github.com/mikehedman/ampersand-hoodie-model) A subclass of ampersand-model that uses the ampersand-hoodie-mixin.
+* [ampersand-hoodie-collection](https://github.com/mikehedman/ampersand-hoodie-collection) A subclass of ampersand-collection that uses the ampersand-hoodie-mixin.  
