@@ -29,7 +29,9 @@ module.exports = View.extend({
         // main renderer
         this.renderWithTemplate({me: me});
 
-        this.renderSubview(new HoodieAccountbar(), '[data-hook=hoodie-accountbar]');
+        this.renderSubview(new HoodieAccountbar({
+            model: me
+        }), '[data-hook=hoodie-accountbar]');
 
         // init and configure our page switcher
         this.pageSwitcher = new ViewSwitcher(this.queryByHook('page-container'), {

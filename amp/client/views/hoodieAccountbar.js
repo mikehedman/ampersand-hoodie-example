@@ -5,6 +5,17 @@ module.exports = View.extend({
     initialize: function (spec) {
         this.template = app.clientHtml['includes.hoodieAccountbar'];
     },
+    bindings: {
+        'model.firstName': '.hoodie-username',
+        'model.accountStatus': {
+            type: 'switch',
+            cases: {
+                'signedout': '.hoodie-account-signedout',
+                'signedin': '.hoodie-account-signedin',
+                'error': '.hoodie-account-error'
+            }
+        }
+    },
     events: {
         'click [data-hoodie-action=signout]': 'handleSignoutClick',
         'click [data-hoodie-action=signup]': 'handleSignupClick',
@@ -15,12 +26,8 @@ module.exports = View.extend({
     },
     handleSigninClick: function () {
         var promise = window.hoodie.account.signIn('mike', 'mike');
-        promise.done(function() {
-        });
     },
     handleSignupClick: function () {
         var promise = window.hoodie.account.signUp('mike', 'mike');
-        promise.done(function() {
-        });
     }
 });

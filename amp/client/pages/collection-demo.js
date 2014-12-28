@@ -6,6 +6,7 @@ module.exports = PageView.extend({
     pageTitle: 'collection demo',
     initialize: function (spec) {
         this.template = app.clientHtml['pages.collectionDemo'];
+        this.subscribeToHoodieEvents();
     },
     events: {
         'click [data-hook~=shuffle]': 'shuffle',
@@ -47,5 +48,9 @@ module.exports = PageView.extend({
             lastName: lastNames[getRandom(0, lastNames.length - 1)],
             coolnessFactor: getRandom(0, 15)
         });
+    },
+    subscribeToHoodieEvents : function() {
+        window.hoodie.account.on('signup changeusername signin reauthenticated', this.fetchCollection.bind(this));
+        window.hoodie.account.on('signout', this.fetchCollection.bind(this));
     }
 });
