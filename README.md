@@ -7,14 +7,20 @@ First, install Hoodie: refer to the [Hoodie setup guide](http://hood.ie/intro/#g
 
 Second, set up the application:
 * clone this repository
-* npm install
-* grunt
+* `$ npm install`
+* `$ grunt`
 
 And then run Hoodie:
-* hoodie start
+* `$hoodie start`
 
 Hoodie will prompt you for an admin password, just enter anything.
 Hoodie will then open the app in a browser window.  Click on the "Sign Up" button to register, and then later use the "Sign In" and "Sign Out" buttons as needed.  (the Sign Up button only works once, since it is hard coded to create one account)
+
+You can also start the app with npm:
+`$ npm start`
+If you start the app through npm, you will need to manually open a browser window.  When Hoodie starts, you will see a line like:
+`WWW:    http://127.0.0.1:6016`
+Open your browser and enter the address on the 'WWW' line.  You will also have to ctrl-c twice to shut down Hoodie.
 
 Once signed in, go to the "Collections demo" tab, and click the "Add Person" button...
 
