@@ -22,6 +22,8 @@ Once signed in, go to the "Collections demo" tab, and click the "Add Person" but
 This is not intended to be a comprehensive tutorial on Ampersand or Hoodie - it is instead a proof of concept for how the two technologies can be used together.
 It is also a work in progress, so there are still some places with yellow "under construction" tape.  For example, all of the Hoodie user management capabilities are not working.  In fact, Sign-In and Sign-Up just default to a user named "mike" with a password of "mike".  This was done to avoid using jQuery for showing modal forms, not because it's bad, but I have not yet gotten around to it.
 
+To simplify things, this app uses plain html templates instead of the original Jade templates.  With Ampersand's DOM binding, I'm finding that I don't have much need for client side runtime templating.
+
 This app is reliant on Grunt.  So if you make any changes to anything under the /amp directory, you must re-run Grunt (or just use "grunt watch").  The main build tasks that Grunt performs:  
 * "Compiles" the HTML templates into one JavaScript file (/amp/client/clientHtml.js)
 * uses Browserify to build a bundle of all the client side JavaScript, and puts it into /www/assets/js/allJs.js
