@@ -1,3 +1,7 @@
+## Deprecated!
+This project was invited to be moved into the Ampersand Examples project, so you can find the latest version of this code [here](https://github.com/AmpersandJS/examples/tree/master/hoodie).
+Mike
+
 # ampersand-hoodie-example
 This repo is a mashup of parts of the sample Hoodie application, and a simplified version of the sample Ampersand application.  The interesting parts are on the "Collection 
 
