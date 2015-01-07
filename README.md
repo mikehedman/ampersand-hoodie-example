@@ -1,9 +1,9 @@
-## Deprecated!
-This project was invited to be moved into the Ampersand Examples project, so you can find the latest version of this code [here](https://github.com/AmpersandJS/examples/tree/master/hoodie).
-Mike
-
 # ampersand-hoodie-example
 This repo is a mashup of parts of the sample Hoodie application, and a simplified version of the sample Ampersand application.  The interesting parts are on the "Collection 
+
+A version of this project was invited to be moved into the AmpersandJS/Examples project, so you can find that version of this code [here](https://github.com/AmpersandJS/examples/tree/master/hoodie).
+
+The difference between the two versions is that the AmpersandJS/Examples project shows a minimal "how to" for storing data to Hoodie, whereas this repo is a more complete implementation that could be used as a jumping off point for a new project.  For example, the AmpersandJS/Examples project just hard-codes a username/password, but this repo will provide a complete set of user management views to support the Hoodie user functionality (signup, signin, change password, etc.).
 
 ## Installation
 
